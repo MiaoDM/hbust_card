@@ -1,1 +1,140 @@
 /**index.wxss**/
+
+Page {
+	background-color: #F7F7F7;
+	background-image: url(https://erguo-use.oss-cn-beijing.aliyuncs.com/hbust_card/back2.jpg);
+	background-size: 100% 100%;
+}
+
+.container {
+	height: 100%;
+	width: 90%;
+	margin-left: 5%;
+	border-radius: 15rpx;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+	margin-top: 100rpx;
+	box-sizing: border-box;
+	background-color: rgba(10, 10, 10, .6);
+}
+
+.container .title {
+	color: white;
+}
+
+/* 最外层 */
+.item {
+	width: 622rpx;
+	margin-left: 32rpx;
+	margin-bottom: 56rpx;
+}
+
+/* END */
+
+/* 第二层 */
+.item_idPhoto {
+	margin-top: 40rpx;
+	display: flex;
+	justify-content: space-between;
+}
+
+/* END */
+
+/* 第三层 */
+.idPhoto {
+	width: 484rpx;
+	height: 253rpx;
+	background-color: #FFFFFF;
+	border: 2rpx dashed #CCCCCC;
+	text-align: center;
+	margin-left: 65rpx;
+}
+
+/* END */
+
+/* 图片 */
+.idPhoto_img {
+	width: 64rpx;
+	height: 53rpx;
+	margin-top: 96rpx;
+}
+
+/* END */
+
+/* 文字 */
+.idPhoto_txt {
+	font-size: 22rpx;
+	color: black;
+	font-weight: normal;
+}
+
+/* END */
+
+/* 拍照后预览相框 */
+.front {
+	width: 253rpx;
+	height: 484rpx;
+	margin-top: -117rpx;
+	transform: rotate(-90deg);
+}
+
+.operating {
+	/* border: 1rpx solid red; */
+	position: relative;
+	flex-direction: column;
+	margin-top: 10rpx;
+}
+
+.operating .item {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: left;
+	margin-bottom: 10rpx;
+	margin-top: 20rpx;
+	/* border:1rpx solid rebeccapurple; */
+}
+
+.operating .item .title {
+	color: white;
+	margin-left: 70rpx;
+}
+
+.operating .item .input-info {
+	border: 2rpx solid #BDC3C7;
+	border-radius: 10rpx;
+	width: 310rpx;
+	padding-left: 10rpx;
+	background-color: white;
+}
+
+.operating .sub-btn {
+	border-radius: 10rpx;
+	width: 170rpx;
+	height: 55rpx;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: white;
+	font-size: 26rpx;
+	margin: 10rpx auto;
+}
+
+.primary {
+	background-color: #1ABC9C;
+}
+
+.danger {
+	background-color: #E74C3C;
+}
+
+.primary-hover {
+	background-color: #48C9B0;
+}
+
+.danger-hover {
+	background-color: #EC7063;
+}
+
+/* END */

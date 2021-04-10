@@ -1,4 +1,34 @@
 <!--index.wxml-->
 <view class="container">
-  
+  <view class="title">拍照识别一卡通</view>
+  <!-- 拍摄上传用户身份证 -->
+  <view class="item">
+    <view class="item_idPhoto">
+      <view class="idPhoto" bindtap="goFront">
+
+        <!-- 初始未上传图片= -->
+        <view wx:if="{{ frontShow }}">
+          <image class="idPhoto_img" src="../../images/add.png">
+          </image>
+          <view class="idPhoto_txt">点击拍摄一卡通正面</view>
+        </view>
+        <!-- END -->
+
+        <!-- 用户拍照完显示预览的图片 -->
+        <image wx:if="{{ !frontShow }}" class="front" src="{{ frontSrc }}"></image>
+        <!-- END -->
+
+      </view>
+    </view>
+  </view>
+  <view class="operating">
+  <view class="item">
+    <view class="title">识别结果：</view>
+    <input type="text" value="{{imgInfo}}" bindinput='handleInputChange' class="input-info"></input>
+  </view>
+  <view class="item">
+    <view class="sub-btn danger" hover-class="danger-hover" bindtap="reset">重置</view>
+    <view class="sub-btn primary" hover-class="primary-hover"bindtap="submit">提交</view>
+  </view>
+</view>
 </view>
